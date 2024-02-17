@@ -1,4 +1,4 @@
-
+package Module02;
 public class RemoveWord {
 
     public static String removeWord(String test, String remove) {
@@ -9,7 +9,7 @@ public class RemoveWord {
 
         for (String word : strArray) {
             if (!word.equals(remove)) {
-                result.append(word)append(" ");
+                result.append(word).append(" ");
             }
         }
 
