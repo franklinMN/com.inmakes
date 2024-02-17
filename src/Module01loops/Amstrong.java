@@ -1,3 +1,5 @@
+package Module01loops;
+
 class Amstrong {
     public static void main( String[] args ) {
 

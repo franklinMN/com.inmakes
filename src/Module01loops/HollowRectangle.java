@@ -1,3 +1,5 @@
+package Module01loops;
+
 public class HollowRectangle {
     public static void main(String[] args) {
         int rows = 4;

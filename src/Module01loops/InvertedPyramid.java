@@ -1,3 +1,5 @@
+package Module01loops;
+
 //8. How to create a star pyramid pattern using ‘*’ in Java
 
 public class InvertedPyramid {

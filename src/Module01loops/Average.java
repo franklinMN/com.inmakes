@@ -1,3 +1,5 @@
+package Module01loops;
+
 import java.util.Scanner;
 
 public class Average {

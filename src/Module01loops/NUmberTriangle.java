@@ -1,3 +1,5 @@
+package Module01loops;
+
 // 12. Create A Number Pyramid Program In Java
 // 1
 // 2 3

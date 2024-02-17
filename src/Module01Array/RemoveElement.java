@@ -1,3 +1,5 @@
+package Module01Array;
+
 //8. How To Remove Given Element from An Array in Java ?
 
 import java.util.Arrays;

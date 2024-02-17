@@ -1,3 +1,5 @@
+package Module01Array;
+
 //5. Write A Java Program to Remove Duplicate Elements in an Array.
 
 import java.util.Arrays;

@@ -1,3 +1,5 @@
+package Module01Array;
+
 //7. Write A Java program To Print Odd and Even Numbers in An Array.
 
 import java.util.Arrays;

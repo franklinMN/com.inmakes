@@ -1,3 +1,6 @@
+package Module01loops;
+
+
 //7. Write a program to check whether the input year is Leap year or not
 
 import java.util.Scanner;

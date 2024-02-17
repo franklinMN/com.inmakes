@@ -1,3 +1,6 @@
+package Module01loops;
+
+
 //10. Write A Program To Print Inverted Half Pyramid Pattern Using Numbers In Java
 // 1 2 3 4 5
 // 1 2 3 4

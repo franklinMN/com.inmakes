@@ -1,10 +1,11 @@
+package Module01Array;
+
 public class MultiplyTwoMatrices {
 
     public static int[][] multiplyMatrices(int[][] matrix1, int[][] matrix2) {
 
         int row1 = matrix1.length;
         int col1 = matrix1[0].length;
-        int row2 = matrix2.length;
         int col2 = matrix2[0].length;
 
         if (row1 != col2)

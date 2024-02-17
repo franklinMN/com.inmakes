@@ -1,3 +1,5 @@
+package Module01Array;
+
 //2. How To Find Third Largest and Second Smallest Element in An Array.
 
 import java.util.Scanner;

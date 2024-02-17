@@ -1,3 +1,5 @@
+package Module01loops;
+
 //5. Write a java program to print prime numbers within limits
 
 public class PrimeWithLimit {
