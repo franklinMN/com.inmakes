@@ -1,6 +1,6 @@
+package Module03;
 import java.util.Vector;
 import java.util.Enumeration;
-import java.util.AbstractCollection;
 
 public class VectorExample {
     public static void main(String[] args) {

@@ -2,7 +2,6 @@ package Module03;
 
 // 5. Write A Program To Iterate TreeMap in java
 
-import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
