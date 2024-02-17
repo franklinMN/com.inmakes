@@ -1,0 +1,12 @@
+Coding Challenge Questions : Array Module 3
+
+1. Write A Java Program for Binary Search Using Array.
+2. How To Find Third Largest and Second Smallest Element in An Array.
+3. Write A Java Program How to Merge Two Arrays.
+4. Write A program to sort an Array Using Insertion Sort.
+5. Write A Java Program to Remove Duplicate Elements in an Array.
+6. How To Check Whether Two String Are Anagram or not.
+7. Write A Java program To Print Odd and Even Numbers in An Array.
+8. How To Remove Given Element from An Array in Java ?
+9. Write A Java Program to Insert a New Element into An Array to the Specified Index.
+10. Write a java Program to multiply two matrices. // hard - not completed

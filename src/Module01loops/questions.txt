@@ -1,0 +1,66 @@
+CODING CHALLRNGE QUESTIONS FOR JAVA STUDENTS
+ BASIC PROGRAMS(USE SUITABLE LOOPS(EX: DO..WHILE, FOR,WHILE))
+1. How to reverse a number in java. 
+2. Write a program to check whether the input number is palindrome or not
+3. Write a java program that takes 5 numbers as input and calculate the average of the number
+4. Write a program to check whether the number is Armstrong or not
+5. Write a java program to print prime numbers within limits
+6. Write a java program to swap two numbers without creating third variable
+7. Write a program to check whether the input year is Leap year or not
+8. How to create a star pyramid pattern using ‘*’ in Java
+* * * * * * *
+  * * * * *
+    * * *
+     * *
+      *
+ 9.Write A program To Print Full Diamond Pattern Using ‘*’ In Java
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+  ***
+   *
+10. Write A Program To Print Inverted Half Pyramid Pattern Using Numbers In Java
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+11. Write A Program To Print Hollow Rectangle Using “*” In Java
+****
+*  *
+*  *
+****
+
+12. Create A Number Pyramid Program In Java
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14
+15 16 17 18 19
+20 21 22 23 24 25
+
+13. Create A Number Pyramid Program In Java
+          5
+        4 4 4
+     3 3 3 3 3 3
+   2 2 2 2 2 2 2 2
+ 1 1 1 1 1 1 1 1 1 1
+14. Create A Pattern Program In Java Using Letters
+ A B C D E
+ A B C D
+ A B C
+ A B
+ A
+
+15.Create A Pattern Program in java Using numbers
+
+ 5 5 5 5 5
+ 4 4 4 4 4
+ 3 3 3 3 3
+ 2 2 2 2 2
+ 1 1 1 1 1
