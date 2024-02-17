@@ -1,3 +1,4 @@
+package Module02;
 // 2 Write a program to convert Given String onto uppercase and lowercase without
 // using String
 

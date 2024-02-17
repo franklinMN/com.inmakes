@@ -1,4 +1,4 @@
-
+package Module02;
 public class RemoveFirstLastChar {
     public static void main(String[] args) {
         String test = "Element";

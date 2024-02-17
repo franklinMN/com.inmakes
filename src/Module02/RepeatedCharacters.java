@@ -1,3 +1,4 @@
+package Module02;
 public class RepeatedCharacters {
     public static void main(String[] args) {
         String str = "This is an example to check the repeated characters in a string. Print the character which comes more than once.";

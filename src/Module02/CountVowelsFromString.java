@@ -1,3 +1,5 @@
+package Module02;
+
 
 public class CountVowelsFromString {
 
