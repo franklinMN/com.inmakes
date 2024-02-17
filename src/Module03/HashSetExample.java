@@ -1,3 +1,5 @@
+package Module03;
+
 import java.util.HashSet;
 
 public class HashSetExample {
