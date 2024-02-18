@@ -1,6 +1,9 @@
 package Module05;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JPanel.*;
+
 import java.awt.*;
 import java.awt.event.*;
 
@@ -19,6 +22,7 @@ public class SimpleCalculator implements ActionListener{
     public static final int WIDTH = 350;
     public static final int HEIGHT = 600;
     public static final int MARGIN  = 10;
+    public static final int BASE_FONT_SIZE = 20;
     // public static final String numberButtonString[] = {
     //     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
     // };
@@ -28,15 +32,24 @@ public class SimpleCalculator implements ActionListener{
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        Font basefont = new Font("Arial", Font.BOLD, BASE_FONT_SIZE);
+        Font textFieldFont = new Font("Arial", Font.BOLD, BASE_FONT_SIZE + 20);
+
         // textField creation
         // .........................................................................................
         miniTextField = new JTextField();
         miniTextField.setBounds(MARGIN, MARGIN, WIDTH-MARGIN*2, 50);
         miniTextField.setBackground(Color.BLUE);
+        miniTextField.setFont(basefont);
+        miniTextField.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        miniTextField.setEditable(false);
 
         textField = new JTextField();
         textField.setBounds(MARGIN, 50 + MARGIN, WIDTH-MARGIN*2, 75);
         textField.setBackground(Color.RED);
+        textField.setFont(textFieldFont);
+        textField.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
+        textField.setEditable(false);
 
         // functionButton creation
         // .........................................................................................
@@ -72,6 +85,7 @@ public class SimpleCalculator implements ActionListener{
 
         for(int i=0 ; i<14 ; i++ ){
             functioButtons[i].addActionListener(this);
+            functioButtons[i].setFont(basefont);
         }
 
 
@@ -80,6 +94,7 @@ public class SimpleCalculator implements ActionListener{
         for(int i=0 ; i<10 ; i++){
             numberButton[i] = new JButton(String.valueOf(i));
             numberButton[i].addActionListener(this);
+            numberButton[i].setFont(basefont);
         }
 
 
@@ -88,22 +103,51 @@ public class SimpleCalculator implements ActionListener{
         panelFrame = new JPanel();
         panelFrame.setLayout(null);
         panelFrame.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        panelFrame.setFont(basefont);
 
         panelTop = new JPanel();
         panelTop.setLayout(null);
         panelTop.setBounds(0, 0, WIDTH, 145);
         panelTop.setBackground(Color.YELLOW);
+        panelTop.setFont(basefont);
 
         panelBottom = new JPanel();
-        panelBottom.setLayout(new GridLayout(6, 4)); 
+        panelBottom.setLayout(new GridLayout(6, 4, 5, 5)); 
+        panelBottom.setBorder(new EmptyBorder(10, 10, 10, 10));
         panelBottom.setBounds(0, 146, WIDTH, HEIGHT-145);
         panelBottom.setBackground(Color.ORANGE);
+        panelBottom.setFont(basefont);
 
         // panel adds
         // .........................................................................................
         panelTop.add(miniTextField);
         panelTop.add(textField);
 
+        panelBottom.add(percentButton);
+        panelBottom.add(clrEntryButton);
+        panelBottom.add(clrButton);
+        panelBottom.add(deleteButton);
+        panelBottom.add(fractiButton);
+        panelBottom.add(sqrButton);
+        panelBottom.add(sqrtButton);
+        panelBottom.add(divButton);
+        panelBottom.add(numberButton[7]);
+        panelBottom.add(numberButton[8]);
+        panelBottom.add(numberButton[9]);
+        panelBottom.add(mulButton);
+        panelBottom.add(numberButton[4]);
+        panelBottom.add(numberButton[5]);
+        panelBottom.add(numberButton[6]);
+        panelBottom.add(subButton);
+        panelBottom.add(numberButton[1]);
+        panelBottom.add(numberButton[2]);
+        panelBottom.add(numberButton[3]);
+        panelBottom.add(addButton);
+        panelBottom.add(negateButton);
+        panelBottom.add(numberButton[0]);
+        panelBottom.add(dotButton);
+        panelBottom.add(eqlButton);
+        
 
         panelFrame.add(panelTop);
         panelFrame.add(panelBottom);
