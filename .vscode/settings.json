@@ -1,7 +1,30 @@
+// {
+//     "java.project.sourcePaths": ["src"],
+//     "java.project.outputPath": "bin",
+//     // "java.project.referencedLibraries": [
+//     //     "lib/**/*.jar"
+//     // ],
+//     "configurations": [
+//         {
+//             "type": "java",
+//             "name": "Module 1 Debug (Launch)",
+//             "request": "launch",
+//             "mainClass": "module07.JDBCExample",
+//             "classpath": ["${workspaceFolder}/bin/module07"]
+//         }
+//     ]
+// }
+
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Module 1 Debug (Launch)",
+            "request": "launch",
+            "mainClass": "module07.JDBCExample",
+            // "classpath": ["${workspaceFolder}/bin/module07"]
+        }
     ]
 }
