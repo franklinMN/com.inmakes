@@ -351,7 +351,5 @@ public class SimpleCalculator implements ActionListener{
             }
             return;
         }
-       
     }
-    
 }
