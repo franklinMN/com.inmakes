@@ -1,0 +1,371 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "Anagram",
+            "request": "launch",
+            "mainClass": "Module01Array.Anagram",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "Module01Array.BinarySearch",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "InsertArray",
+            "request": "launch",
+            "mainClass": "Module01Array.InsertArray",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSort",
+            "request": "launch",
+            "mainClass": "Module01Array.InsertionSort",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "MergeArray",
+            "request": "launch",
+            "mainClass": "Module01Array.MergeArray",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "MultiplyTwoMatrices",
+            "request": "launch",
+            "mainClass": "Module01Array.MultiplyTwoMatrices",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "OddAndEvenInArray",
+            "request": "launch",
+            "mainClass": "Module01Array.OddAndEvenInArray",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "RemoveDuplicates",
+            "request": "launch",
+            "mainClass": "Module01Array.RemoveDuplicates",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "RemoveElement",
+            "request": "launch",
+            "mainClass": "Module01Array.RemoveElement",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ThirdSecondSmallest",
+            "request": "launch",
+            "mainClass": "Module01Array.ThirdSecondSmallest",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "Amstrong",
+            "request": "launch",
+            "mainClass": "Module01loops.Amstrong",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "Average",
+            "request": "launch",
+            "mainClass": "Module01loops.Average",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "Diamond",
+            "request": "launch",
+            "mainClass": "Module01loops.Diamond",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "HollowRectangle",
+            "request": "launch",
+            "mainClass": "Module01loops.HollowRectangle",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "InvertedPyramid",
+            "request": "launch",
+            "mainClass": "Module01loops.InvertedPyramid",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "InvertedPyramidNum1",
+            "request": "launch",
+            "mainClass": "Module01loops.InvertedPyramidNum1",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "InvertedTriangleAlpha",
+            "request": "launch",
+            "mainClass": "Module01loops.InvertedTriangleAlpha",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "LeapYear",
+            "request": "launch",
+            "mainClass": "Module01loops.LeapYear",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "NUmberTriangle",
+            "request": "launch",
+            "mainClass": "Module01loops.NUmberTriangle",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "NumberPyramid",
+            "request": "launch",
+            "mainClass": "Module01loops.NumberPyramid",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Module01loops.Palindrome",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "PatternProgramNumRect",
+            "request": "launch",
+            "mainClass": "Module01loops.PatternProgramNumRect",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "PrimeWithLimit",
+            "request": "launch",
+            "mainClass": "Module01loops.PrimeWithLimit",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ReverseNumber",
+            "request": "launch",
+            "mainClass": "Module01loops.ReverseNumber",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "SwapWithoutTemp",
+            "request": "launch",
+            "mainClass": "Module01loops.SwapWithoutTemp",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "CountVowelsFromString",
+            "request": "launch",
+            "mainClass": "Module02.CountVowelsFromString",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "OnlyDigits",
+            "request": "launch",
+            "mainClass": "Module02.OnlyDigits",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "RemoveFirstLastChar",
+            "request": "launch",
+            "mainClass": "Module02.RemoveFirstLastChar",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "RemoveWord",
+            "request": "launch",
+            "mainClass": "Module02.RemoveWord",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "RepeatedCharacters",
+            "request": "launch",
+            "mainClass": "Module02.RepeatedCharacters",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ReverseOfWords",
+            "request": "launch",
+            "mainClass": "Module02.ReverseOfWords",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ToggleCaseNoAPI",
+            "request": "launch",
+            "mainClass": "Module02.ToggleCaseNoAPI",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ToggleCaseWithAPI",
+            "request": "launch",
+            "mainClass": "Module02.ToggleCaseWithAPI",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListEmpty",
+            "request": "launch",
+            "mainClass": "Module03.ArrayListEmpty",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListSorting",
+            "request": "launch",
+            "mainClass": "Module03.ArrayListSorting",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "CompareArrayList",
+            "request": "launch",
+            "mainClass": "Module03.CompareArrayList",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "HashSetExample",
+            "request": "launch",
+            "mainClass": "Module03.HashSetExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "HastsetToArraylist",
+            "request": "launch",
+            "mainClass": "Module03.HastsetToArraylist",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "IterateTreeMap",
+            "request": "launch",
+            "mainClass": "Module03.IterateTreeMap",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "LinkedListInsert",
+            "request": "launch",
+            "mainClass": "Module03.LinkedListInsert",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "PropertiesExample",
+            "request": "launch",
+            "mainClass": "Module03.PropertiesExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "SortHashMapbyKeys",
+            "request": "launch",
+            "mainClass": "Module03.SortHashMapbyKeys",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "StackExample",
+            "request": "launch",
+            "mainClass": "Module03.StackExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "TreeSetExample",
+            "request": "launch",
+            "mainClass": "Module03.TreeSetExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "VectorExample",
+            "request": "launch",
+            "mainClass": "Module03.VectorExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "BankingApplication",
+            "request": "launch",
+            "mainClass": "Module05.BankingApplication",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "SimpleCalculator",
+            "request": "launch",
+            "mainClass": "Module05.SimpleCalculator",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "SimpleUserRegistrationForm",
+            "request": "launch",
+            "mainClass": "Module05.SimpleUserRegistrationForm",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "JDBCExample",
+            "request": "launch",
+            "mainClass": "Module07.JDBCExample",
+            "projectName": "com.inmakes_3409087c"
+        },
+        {
+            "type": "java",
+            "name": "JDBCExample1",
+            "request": "launch",
+            "mainClass": "Module07.JDBCExample1",
+            "projectName": "com.inmakes_3409087c"
+        }
+    ]
+}
