@@ -189,7 +189,7 @@ public class SimpleCalculator implements ActionListener{
 
     public static void main(String[] args) {
         
-        SimpleCalculator calculator = new SimpleCalculator();
+        new SimpleCalculator();
     }
 
     @Override
