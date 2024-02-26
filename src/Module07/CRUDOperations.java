@@ -2,6 +2,7 @@ package Module07;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -50,9 +51,9 @@ public class CRUDOperations {
 
             try{ // closing all the resources
 
-                if( conn != null ) conn.close();
                 if( statement != null ) statement.close();
                 if( resultSet != null ) resultSet.close();
+                if( conn != null ) conn.close();
                 if( scan != null ) scan.close();
                 
 
@@ -88,17 +89,17 @@ public class CRUDOperations {
             userChoice = scan.nextInt();
             scan.nextLine();
             switch (userChoice) {
-                case 1: createTable();
+                case 1: createTable();  // completed
                         break;
-                case 2: insertValues();
+                case 2: insertValues();  // completed
                         break;
                 case 3: readData();  // completed
                         break;
-                case 4: updateValue();
+                case 4: updateValue();  // completed
                         break;
-                case 5: deleteRow();
+                case 5: deleteRow();  // completed
                         break;
-                case 6: deleteTable();
+                case 6: deleteTable();  // completed
                         break;
                 case 7: allTables();  // completed
                         break;
@@ -188,7 +189,78 @@ public class CRUDOperations {
 
 
 
-    public static void insertValues( ) {}
+    public static void insertValues( ) throws SQLException {
+
+        // INSERT INTO table_name (column1, column2, column3, ...)
+        // VALUES (value1, value2, value3, ...);
+
+        String tableName = selectTable();
+        String sql = "select * from " + tableName + ";";
+        
+        String input;
+
+        System.out.println(sql);
+        resultSet = statement.executeQuery(sql);
+        ResultSetMetaData metaData = resultSet.getMetaData();
+        int cols = metaData.getColumnCount();
+        String insertSQL = "insert into " + tableName + " ( ";
+
+        for( int i=1 ; i <= cols ; i++ ){
+            insertSQL += metaData.getColumnName(i);
+            if( i < cols ){
+                insertSQL += " , ";
+            }
+        }
+
+        insertSQL += " ) values ( ";
+
+        for( int i=1 ; i <= cols ; i++ ){
+            insertSQL += "?";
+            if( i < cols ){
+                insertSQL += " , ";
+            }
+        }
+
+        insertSQL += " )";
+
+        PreparedStatement preparedStatement = conn.prepareStatement(insertSQL);
+
+        for( int i=1 ; i <= cols ; i++ ){
+            System.out.print("Enter " + metaData.getColumnName(i) + " : ");
+            input = scan.nextLine();
+            preparedStatement.setString(i, input);
+        }
+
+        int rowsInserted = preparedStatement.executeUpdate();
+        System.out.println(rowsInserted + " row(s) inserted successfully.");
+
+        // StringBuilder insertInto = new StringBuilder();
+        // StringBuilder values = new StringBuilder();
+
+        // insertInto.append("INSERT INTO " + tableName + " ( ");
+        // values.append(" VALUES ( ");
+
+        // for( int i=1 ; i<=metaData.getColumnCount(); i++ ){
+        //     System.out.print("Enter " + metaData.getColumnName(i) + " : ");
+        //     input = scan.nextLine();
+
+        //     insertInto.append(metaData.getColumnName(i));
+        //     values.append(input);
+
+        //     if(i<metaData.getColumnCount()){
+        //         insertInto.append(", ");
+        //         values.append(", ");
+        //     }
+        // }
+        // insertInto.append(" )");
+        // values.append(" )");
+
+        // sql = insertInto.append(values).append(";").toString();
+        // System.out.println(sql);
+
+        // statement.executeUpdate(sql);
+
+    }
 
 
 
@@ -203,12 +275,16 @@ public class CRUDOperations {
         System.out.println("QUERY: " + sql);
         resultSet = statement.executeQuery(sql);
         ResultSetMetaData metaData = resultSet.getMetaData();
+        System.out.println();
+        System.out.println();
         while (resultSet.next()) {
             for( int i=1 ; i<=metaData.getColumnCount() ; i++ ){
                 System.out.print( metaData.getColumnName(i) + " : "  + resultSet.getString(i) + "\t");
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println();
         System.out.println("Completed!");
     }
 
@@ -217,7 +293,44 @@ public class CRUDOperations {
 //---------------------Update the Table----------------------------------------------------------
 
 
-    public static void updateValue( ) throws SQLException{}
+    public static void updateValue() throws SQLException {
+        String tableName = selectTable();
+        String sql = "SELECT * FROM " + tableName + ";";
+        System.out.println(sql);
+        resultSet = statement.executeQuery(sql);
+        ResultSetMetaData metaData = resultSet.getMetaData();
+
+        System.out.println("Columns in the selected table: ");
+        for( int i=1 ; i <= metaData.getColumnCount() ; i++ ){
+            System.out.println(metaData.getColumnName(i));
+
+        }
+        
+        System.out.print("Enter the name of the column to update: ");
+        String columnNameToUpdate = scan.nextLine();
+        
+        System.out.print("Enter the value of the column to match: ");
+        String matchValue = scan.nextLine();
+        
+        System.out.print("Enter the name of the column to set: ");
+        String columnToSet = scan.nextLine();
+        
+        System.out.print("Enter the new value for the column: ");
+        String newValue = scan.nextLine();
+        
+        String updateSql = "UPDATE " + tableName + " SET " + columnToSet + " = ? WHERE " + columnNameToUpdate + " = ?";
+        
+        try (PreparedStatement preparedStatement = conn.prepareStatement(updateSql)) {
+            preparedStatement.setString(1, newValue);
+            preparedStatement.setString(2, matchValue);
+            
+            int rowsUpdated = preparedStatement.executeUpdate();
+            System.out.println(rowsUpdated + " row(s) updated successfully.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 
